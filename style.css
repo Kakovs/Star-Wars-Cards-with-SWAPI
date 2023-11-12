@@ -1,0 +1,221 @@
+/* global */
+body{
+    background-color: #000;
+    font-family: 'Muli';
+}
+
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px){
+    .container{
+        max-width: 960px
+    }
+}
+
+@media (min-width: 1100px){
+    .container{
+        max-width: 1187px;
+    }
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url(font/Muli-ExtraLight.ttf) format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url(/font/Muli-ExtraLightItalic.ttf) format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url(/font/Muli-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url(/font/Muli-LightItalic.ttf) format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url(/font/Muli-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url(/font/Muli-Italic.ttf) format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url(/font/Muli-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url(font/Muli-SemiBoldItalic.ttf) format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url(font/Muli-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url(font/Muli-BoldItalic.ttf) format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url(font/Muli-ExtraBold.ttf) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url(font/Muli-ExtraBoldItalic.ttf) format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* header */
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    max-width: 300px;
+}
+
+.menu{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li{
+    margin: 0 10px;
+}
+
+.menu li::marker{
+    content: none;
+}
+
+.menuItem i{
+    padding-right: 5px;
+    font-size: 24px;
+}
+
+.menuItem{
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.menu .human{
+    border: 1px solid #147bd7;
+    background-color: #147bd7;
+}
+
+.menu .planet{
+    border: 1px solid #e8341b;
+    background-color: #e8341b;
+}
+
+.menu .vehicle{
+    border: 1px solid #ffbb68;
+    background-color: #ffbb68;
+}
+
+.menu .starShip{
+    border: 1px solid #acb1c7;
+    background-color: #acb1c7;
+}
+
+/* cards */
+
+.cardGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.cardGrid p{
+    font-family: 'Muli';
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.singleCard{
+    background-color: #fff;
+}
+
+.singleCard>div{
+    padding: 0 15px;
+}
+
+.humanCard .nameBox{
+    background-color: #147bd7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.humanCard .nameBox i{
+    font-size: 20px;
+}
+
+.humanCard .name{
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+}
